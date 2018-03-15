@@ -1,0 +1,17 @@
+public Boolean Collision_Left(PictureBox obj)
+{
+    if (obj.Location.X <= 0)
+    {
+        return true;
+    }
+    return false;
+}
+
+public Boolean Collision_Right(PictureBox obj)
+{
+    if (obj.Location.X + obj.Width >= WorldFrame.Width)
+    {
+        return true;
+    }
+    return false;
+}
